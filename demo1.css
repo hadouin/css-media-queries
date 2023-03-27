@@ -1,0 +1,43 @@
+body {
+  min-height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: 'Fira Code';
+}
+
+.mobile,
+.tablet-portrait,
+.tablet-landscape,
+.laptop {
+  display: none;
+}
+
+@media screen and (max-width: 719px) {
+  .mobile {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 720px) and (max-width: 899px) {
+  .tablet-portrait {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 900px) and (max-width: 1023px) {
+  .tablet-landscape {
+    display: block;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .laptop {
+    display: block;
+  }
+}
