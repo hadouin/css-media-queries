@@ -4,6 +4,14 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: #0f1220;
+    color: #cfdbf3;
+  }
 }
 
 h1 {
@@ -11,17 +19,10 @@ h1 {
   font-family: 'Fira Code';
 }
 
-.mobile,
 .tablet-portrait,
 .tablet-landscape,
 .laptop {
   display: none;
-}
-
-@media screen and (max-width: 719px) {
-  .mobile {
-    display: block;
-  }
 }
 
 @media screen and (min-width: 720px) and (max-width: 899px) {
@@ -39,5 +40,11 @@ h1 {
 @media screen and (min-width: 1024px) {
   .laptop {
     display: block;
+  }
+}
+
+@media screen and (min-width: 720px) {
+  .mobile {
+    display: none;
   }
 }
